@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: white;
+}
+nav{
+    background-color: #d5c08a;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-self: center;
+    font-size: 20px;
+}
+.nav-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    
+}
+.left{
+     padding: 20px;
+     position: relative;
+     left: 0px;
+     width: 30%;
+}
+.nav-main{
+    width: 40%;
+    position: relative;
+    left: 0px;
+}
+.nav-main ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-main ul li{
+    
+    list-style: none;
+    
+}
+.nav-main ul li:hover{
+    text-decoration: underline;
+    
+    
+}
+.nav-main ul li a{
+    color: black;
+    text-decoration: none;
+}
+.nav-main ul li a:hover{
+
+    text-decoration: underline;
+}
+.nav-main ul li a{
+    color: black;
+    text-decoration: none;
+}
+.right{
+    margin-right: 20px;
+    width: 30%;
+    position: relative;
+    left: 160px;  
+    
+}
+.search{
+    /* padding: 7px 10px; */
+    width: 58%;
+    border: 2px solid #bda976;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+.search input{
+    height: 33px;
+    width: 100%;
+    background-color:#d5c08a;
+    border: none;
+    color: black;
+    padding-left: 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    
+}
+.search input:focus{
+    outline:none;
+}
+.search ::placeholder{ 
+    font-size: 15px;
+    color: black;
+    
+}
+.search i{
+
+    padding-left:15px;
+}
+.body{
+    
+    width: 98.7%;
+    height: 1000px;
+    position: absolute;
+    top: 58px;
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bu{
+    height: 100%;
+    width: 98%;
+    display: flex;
+
+}
+.bm{
+    /* border: 1.5px /\solid black; */
+    box-shadow: 2px 2px 7px black;
+    height: 580px;
+    width: 65%;
+    border-radius: 15px;
+    margin:10px;
+    background-color: white;
+    position: relative;
+    padding: 10px;
+      
+}
+.bm p{
+    padding: 5px;
+    width: 98%;
+    max-height: 155px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.date{
+
+}
+.bm h2{
+    width: 100%;
+}
+.img{
+    margin:10px;
+    height: 300px;
+    width: 80%;
+    /* border: 2px solid black; */
+
+}
+.img img{
+    width: 100%;  
+    height: 100%;  
+    object-fit: contain;
+    object-position: left; 
+    
+}
+.bs{
+    width: 35%;
+    height: 97%;
+}
+.be{
+
+    box-shadow: 2px 2px 7px black;
+    width: 96%;
+    height: 48.9%;
+    border-radius: 15px;
+    margin:10px;
+    background-color: white;
+    display: flex;
+}
+#newsContainer{
+    height: 500px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#newsContainer a{
+    color: black;
+    text-decoration: none;
+}
+.ble{
+    margin: 10px;
+    height: 400px;
+    width: 330px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px black;
+
+}
+.common{
+    color: black;
+    text-decoration: none;
+}
+.be_img{
+    /* border: 2px solid black; */
+    margin-left: 5px;
+    height: 100%;
+    width: 50%;
+    padding: 3px;
+}
+.be_img img{
+    width: 100%;  
+    height: 100%;  
+    object-fit: contain;
+    object-position: left; 
+    
+}
+.be_p1{
+    /* border: 2px solid black; */
+    margin: 10px;
+    font-weight:bold;
+    font-size: 20px;
+    max-height: 70px;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+
+}
+.be_p2{
+    margin: 10px;
+    font-size: 20px;
+    width: 250px;
+    max-height: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.bleimg{
+    /* border: 2px solid black; */
+    height: 200px;
+    width: 100%;
+    margin: 8px;
+    padding-top: 10px;
+}
+.bleimg img{
+    width: 95%;  
+    height: 100%;  
+    object-fit: contain;
+    object-position: center;   
+}
+.ble_h3{
+    padding:5px;
+    max-height: 138px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.blep{
+    padding:5px;
+    margin-bottom: 8px;
+    max-height: 63px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.hamburger{
+    border: 3.5px solid #bda976;
+    height: 93vh;
+    width: 20vw;
+    position: fixed;
+    top: 60px;
+    left:-400px;
+    z-index: 5;
+    background-color: #d5c08a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: left 0.7s ease-out;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.cancle{
+    /* border: 2px solid black; */
+    padding: 10px;
+    width: 100%;
+    height: 35px;
+    padding-left: 90%;
+    font-size: 22px;
+    color: rgb(67, 66, 66);
+
+    /* font-weight: 10px; */
+}
+.logo__{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo__ img{
+    width: 250px;
+}
+.category{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.category ul{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+}
+.category ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none; 
+    height: 30px;
+    
+}
+.category ul li:hover{
+    background-color: #c9b686;
+    text-decoration: underline;
+}
+
+
+.category ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.aboutus{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 60px;
+    padding: 5px;
+}
+.fa-bars{
+    cursor: pointer;
+    font-size: 20px;
+}
+.copy{
+    /* margin-left: 120px; */
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+.logo_{
+    width: 20px;
+    position: relative;
+    left: -410px;
+}
+.logo_>img{
+   width: 160px; 
+}
+/* Scrollbar width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background:black; /* Light gray background */
+    border-radius: 10px;
+}
+
+/* Scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+    background: rgb(112, 111, 111); /* Blue color */
+    border-radius: 10px;
+}
+
